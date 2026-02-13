@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartografía Interactiva | Pilsen Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ========================================
+         NAVEGACIÓN
+         ======================================== -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Pilsen Digital</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cartografia.html" class="active">Cartografía</a></li>
+                <li><a href="voces.html">Voces</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="repositorio.html">Repositorio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HEADER DE PÁGINA
+         ======================================== -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Cartografía Interactiva</h1>
+                <p class="lead">Explora las múltiples capas de Pilsen: gentrificación, paisaje lingüístico y puntos de interés cultural</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+         ======================================== -->
+    <main class="page-content">
+        <div class="container">
+            
+            <!-- Introducción al mapa -->
+            <section class="page-section">
+                <p class="text-center mb-4" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <!-- TEXTO A COMPLETAR: Descripción del mapa y cómo usarlo -->
+                    Este mapa interactivo presenta una visualización multicapa del barrio de Pilsen. Cada capa revela diferentes aspectos de la transformación urbana y la resistencia cultural de la comunidad. Utiliza los controles del mapa para alternar entre las diferentes visualizaciones.
+                </p>
+            </section>
+
+            <!-- ========================================
+                 CONTENEDOR DEL MAPA
+                 
+                 INSTRUCCIONES PARA INSERTAR TU ARCGIS STORYMAP:
+                 
+                 1. Crea tu StoryMap en ArcGIS (storymaps.arcgis.com)
+                 2. Una vez publicado, obtén el código de embed
+                 3. Reemplaza el div con clase "map-placeholder" por tu iframe
+                 
+                 Ejemplo de cómo debe quedar:
+                 <div class="map-container">
+                     <iframe 
+                         src="https://storymaps.arcgis.com/stories/TU-ID-AQUI" 
+                         width="100%" 
+                         height="600" 
+                         frameborder="0"
+                         allowfullscreen>
+                     </iframe>
+                 </div>
+                 
+                 Alternativamente, puedes usar la función JavaScript:
+                 En el archivo main.js, descomenta la línea loadArcGISMap() 
+                 y reemplaza el URL con el tuyo.
+                 ======================================== -->
+            <section class="page-section">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <h3>Mapa de ArcGIS StoryMap</h3>
+                        <p>El mapa interactivo se mostrará aquí una vez que insertes tu StoryMap de ArcGIS.</p>
+                        <p style="font-size: 0.85rem; margin-top: 1rem;">
+                            Consulta los comentarios en el código HTML para instrucciones de implementación.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+                 LEYENDA DEL MAPA
+                 ======================================== -->
+            <section class="page-section">
+                <h2 class="section-title">Capas del Mapa</h2>
+                
+                <div class="map-legend">
+                    <!-- Capa de Gentrificación -->
+                    <div class="legend-item">
+                        <div class="legend-color gentrificacion"></div>
+                        <div class="legend-info">
+                            <h4>Capa de Gentrificación</h4>
+                            <p>
+                                <!-- TEXTO A COMPLETAR -->
+                                Visualización del desplazamiento demográfico y los cambios en el valor de las propiedades en Pilsen durante las últimas décadas. Los tonos más intensos indican mayor impacto de gentrificación.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Marcadores de Paisaje Lingüístico -->
+                    <div class="legend-item">
+                        <div class="legend-color linguistico"></div>
+                        <div class="legend-info">
+                            <h4>Paisaje Lingüístico</h4>
+                            <p>
+                                <!-- TEXTO A COMPLETAR -->
+                                Puntos que identifican negocios y espacios públicos según su señalización: español, inglés, bilingüe o sin texto. Esta capa permite observar la presencia visual de la lengua española en el espacio urbano.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Puntos de Interés Cultural -->
+                    <div class="legend-item">
+                        <div class="legend-color cultural"></div>
+                        <div class="legend-info">
+                            <h4>Puntos de Interés Cultural</h4>
+                            <p>
+                                <!-- TEXTO A COMPLETAR -->
+                                Ubicación de iglesias, centros culturales, escuelas bilingües, murales emblemáticos y otros espacios que forman parte del tejido cultural de la comunidad mexicana en Pilsen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================
+                 DATOS Y METODOLOGÍA
+                 ======================================== -->
+            <section class="page-section">
+                <h2 class="section-title">Metodología</h2>
+                
+                <div class="research-grid">
+                    <div class="research-card">
+                        <h3>Fuentes de Datos</h3>
+                        <p>
+                            <!-- TEXTO A COMPLETAR: Describe las fuentes de datos usadas -->
+                            Los datos de esta cartografía provienen de múltiples fuentes: censos demográficos, registros de propiedad, trabajo de campo realizado por estudiantes de los cursos SPAN 20310 y SPAN 20801, y documentación fotográfica del paisaje lingüístico.
+                        </p>
+                    </div>
+                    
+                    <div class="research-card">
+                        <h3>Proceso de Recolección</h3>
+                        <p>
+                            <!-- TEXTO A COMPLETAR: Describe el proceso de recolección -->
+                            Los estudiantes realizaron caminatas sistemáticas por las calles de Pilsen, documentando la señalización visible, entrevistando a comerciantes y residentes, y registrando las coordenadas geográficas de cada punto de interés.
+                        </p>
+                    </div>
+                    
+                    <div class="research-card">
+                        <h3>Limitaciones</h3>
+                        <p>
+                            <!-- TEXTO A COMPLETAR: Describe las limitaciones del mapa -->
+                            Esta cartografía representa una instantánea del barrio en un momento específico. El paisaje urbano de Pilsen está en constante transformación, y algunos de los puntos documentados pueden haber cambiado desde la fecha de recolección.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Pilsen Digital</h4>
+                    <p>Un proyecto de humanidades digitales de la Universidad de Chicago</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://voices.uchicago.edu/vaeranda/basic-page/" target="_blank" rel="noopener">Revista Væranda</a></li>
+                        <li><a href="https://www.uchicago.edu" target="_blank" rel="noopener">Universidad de Chicago</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-statement">
+                    <h4>Declaración de Inclusividad</h4>
+                    <p>
+                        Este proyecto celebra y valora la diversidad de identidades, lenguas y experiencias que enriquecen tanto el aula como la comunidad de Pilsen.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alejandro Orihuela | Universidad de Chicago</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

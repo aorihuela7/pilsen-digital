@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Académico | Pilsen Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Pilsen Digital</span>
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cartografia.html">Cartografía</a></li>
+                <li><a href="voces.html">Voces</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="repositorio.html" class="active">Repositorio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Repositorio Académico</h1>
+                <p class="lead">Producción estudiantil que conecta la investigación con el compromiso comunitario</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <!-- TABS DE NAVEGACIÓN -->
+            <section class="page-section">
+                <div class="repo-tabs">
+                    <button class="repo-tab active" data-tab="guias">Guías de Inmersión</button>
+                    <button class="repo-tab" data-tab="proyectos">Proyectos Finales</button>
+                    <button class="repo-tab" data-tab="vaeranda">Revista Væranda</button>
+                </div>
+
+                <!-- ========================================
+                     GUÍAS DE INMERSIÓN
+                     ======================================== -->
+                <div id="guias" class="repo-content active">
+                    <p class="mb-4">
+                        Folletos bilingües diseñados para familias y visitantes de la universidad, ofreciendo una guía práctica para explorar los barrios latinos de Chicago.
+                    </p>
+                    
+                    <div class="resource-list">
+                        <!-- GUÍA 1 -->
+                        <!-- 
+                             INSTRUCCIONES PARA AGREGAR GUÍAS:
+                             1. Sube el PDF de la guía a la carpeta documents/guias/
+                             2. Actualiza el href con la ruta al archivo
+                             3. Completa el título y descripción
+                        -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4>Guía de Humboldt Park</h4>
+                                <p><!-- DESCRIPCIÓN: Qué incluye esta guía, para quién es --></p>
+                                <a href="documents/guias/guia-humboldt-park.pdf" class="resource-link" target="_blank">Descargar PDF →</a>
+                            </div>
+                        </div>
+
+                        <!-- GUÍA 2 -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4>Guía de Pilsen</h4>
+                                <p><!-- DESCRIPCIÓN --></p>
+                                <a href="documents/guias/guia-pilsen.pdf" class="resource-link" target="_blank">Descargar PDF →</a>
+                            </div>
+                        </div>
+
+                        <!-- GUÍA 3 -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO DE LA GUÍA --></h4>
+                                <p><!-- DESCRIPCIÓN --></p>
+                                <a href="documents/guias/guia-3.pdf" class="resource-link" target="_blank">Descargar PDF →</a>
+                            </div>
+                        </div>
+
+                        <!-- Para agregar más guías, copia un bloque resource-item -->
+                    </div>
+                </div>
+
+                <!-- ========================================
+                     PROYECTOS FINALES
+                     ======================================== -->
+                <div id="proyectos" class="repo-content">
+                    <p class="mb-4">
+                        Selección de los mejores ensayos y análisis críticos producidos por estudiantes de los cursos SPAN 20310 y SPAN 20801, explorando temas de cultura, lengua e identidad.
+                    </p>
+                    
+                    <div class="resource-list">
+                        <!-- PROYECTO 1 -->
+                        <!-- 
+                             INSTRUCCIONES PARA AGREGAR PROYECTOS:
+                             1. Sube el PDF del proyecto a documents/proyectos/
+                             2. Actualiza el href con la ruta al archivo
+                             3. Completa el título, autor y descripción
+                        -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO DEL ENSAYO --></h4>
+                                <p>Por <!-- NOMBRE DEL ESTUDIANTE --> | SPAN 20310</p>
+                                <p><!-- BREVE DESCRIPCIÓN DEL CONTENIDO --></p>
+                                <a href="documents/proyectos/proyecto-1.pdf" class="resource-link" target="_blank">Leer ensayo →</a>
+                            </div>
+                        </div>
+
+                        <!-- PROYECTO 2 -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO DEL ENSAYO --></h4>
+                                <p>Por <!-- NOMBRE DEL ESTUDIANTE --> | SPAN 20801</p>
+                                <p><!-- DESCRIPCIÓN --></p>
+                                <a href="documents/proyectos/proyecto-2.pdf" class="resource-link" target="_blank">Leer ensayo →</a>
+                            </div>
+                        </div>
+
+                        <!-- PROYECTO 3 -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO --></h4>
+                                <p>Por <!-- NOMBRE --> | SPAN 20310</p>
+                                <p><!-- DESCRIPCIÓN --></p>
+                                <a href="documents/proyectos/proyecto-3.pdf" class="resource-link" target="_blank">Leer ensayo →</a>
+                            </div>
+                        </div>
+
+                        <!-- PROYECTO 4 -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO --></h4>
+                                <p>Por <!-- NOMBRE --> | SPAN 20801</p>
+                                <p><!-- DESCRIPCIÓN --></p>
+                                <a href="documents/proyectos/proyecto-4.pdf" class="resource-link" target="_blank">Leer ensayo →</a>
+                            </div>
+                        </div>
+
+                        <!-- Para agregar más proyectos, copia un bloque resource-item -->
+                    </div>
+                </div>
+
+                <!-- ========================================
+                     CONEXIÓN CON REVISTA VÆRANDA
+                     ======================================== -->
+                <div id="vaeranda" class="repo-content">
+                    <p class="mb-4">
+                        La revista <em>Væranda</em> es la plataforma literaria del Departamento de Lenguas Romances de la Universidad de Chicago. Aquí encontrarás enlaces a trabajos publicados por estudiantes relacionados con el proyecto Pilsen Digital.
+                    </p>
+                    
+                    <div class="research-card featured" style="margin-bottom: 2rem;">
+                        <h3>Sobre Væranda</h3>
+                        <p>
+                            <!-- TEXTO A COMPLETAR: Descripción de la revista -->
+                            Væranda es un espacio de publicación estudiantil que celebra la escritura creativa y académica en español, portugués, francés e italiano. La revista ofrece una plataforma para que los estudiantes compartan su trabajo con una audiencia más amplia.
+                        </p>
+                        <a href="https://voices.uchicago.edu/vaeranda/basic-page/" class="resource-link" target="_blank" style="display: inline-block; margin-top: 1rem;">
+                            Visitar Revista Væranda →
+                        </a>
+                    </div>
+                    
+                    <h3 class="mb-3">Publicaciones Relacionadas</h3>
+                    <div class="resource-list">
+                        <!-- PUBLICACIÓN 1 -->
+                        <!-- 
+                             INSTRUCCIONES:
+                             Agrega enlaces a publicaciones específicas en Væranda
+                             que estén relacionadas con Pilsen Digital
+                        -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO DE LA PUBLICACIÓN --></h4>
+                                <p>Por <!-- AUTOR --> | Væranda, <!-- AÑO/EDICIÓN --></p>
+                                <a href="#" class="resource-link" target="_blank">Leer en Væranda →</a>
+                            </div>
+                        </div>
+
+                        <!-- PUBLICACIÓN 2 -->
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <div class="resource-info">
+                                <h4><!-- TÍTULO --></h4>
+                                <p>Por <!-- AUTOR --> | Væranda, <!-- AÑO --></p>
+                                <a href="#" class="resource-link" target="_blank">Leer en Væranda →</a>
+                            </div>
+                        </div>
+
+                        <!-- Para agregar más publicaciones, copia un bloque resource-item -->
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Pilsen Digital</h4>
+                    <p>Un proyecto de humanidades digitales de la Universidad de Chicago</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://voices.uchicago.edu/vaeranda/basic-page/" target="_blank" rel="noopener">Revista Væranda</a></li>
+                        <li><a href="https://www.uchicago.edu" target="_blank" rel="noopener">Universidad de Chicago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-statement">
+                    <h4>Declaración de Inclusividad</h4>
+                    <p>Este proyecto celebra y valora la diversidad de identidades, lenguas y experiencias que enriquecen tanto el aula como la comunidad de Pilsen.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alejandro Orihuela | Universidad de Chicago</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
