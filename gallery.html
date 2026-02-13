@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Art Gallery | Pilsen Digital</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Pilsen Digital</span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Interactive Map</a></li>
+                <li><a href="voices.html">Voices</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="repository.html">Repository</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Public Art Gallery</h1>
+                <p class="lead">Pilsen's muralism as a tool of resistance and community agency</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <section class="page-section">
+                <div class="research-card featured" style="max-width: 900px; margin: 0 auto;">
+                    <h3>Art as Resistance</h3>
+                    <p>
+                        Pilsen's murals are not simply urban decoration; they are declarations of identity, resistance, and collective memory. Since the 1970s, Chicano artists have transformed the neighborhood's walls into canvases that narrate stories of migration, labor struggles, cultural pride, and resistance against displacement.
+                    </p>
+                    <p>
+                        In the face of gentrification, these murals acquire new meaning: they are territorial markers that affirm the continued presence of the Mexican community and their right to remain. Each mural erased or covered represents not only the loss of a work of art, but the erasure of a community voice.
+                    </p>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="todos">All</button>
+                    <button class="filter-btn" data-filter="activism">Activism</button>
+                    <button class="filter-btn" data-filter="identity">Identity</button>
+                    <button class="filter-btn" data-filter="religion">Religion</button>
+                    <button class="filter-btn" data-filter="history">History</button>
+                </div>
+            </section>
+
+            <section class="page-section">
+                <div class="gallery-grid">
+                    
+                    <div class="mural-card" data-category="identity">
+                        <div class="mural-image" style="background-image: url('images/murales/corazon-chicago.jpg');">
+                            <span class="mural-category">Identity</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3>El Corazon de Chicago</h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="activism">
+                        <div class="mural-image" style="background-image: url('images/murales/declaration-immigration.jpg');">
+                            <span class="mural-category">Activism</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3>Declaration of Immigration Mural</h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="history">
+                        <div class="mural-image" style="background-image: url('images/murales/mural-3.jpg');">
+                            <span class="mural-category">History</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3><!-- TITLE --></h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="religion">
+                        <div class="mural-image" style="background-image: url('images/murales/mural-4.jpg');">
+                            <span class="mural-category">Religion</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3><!-- TITLE --></h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="activism">
+                        <div class="mural-image" style="background-image: url('images/murales/mural-5.jpg');">
+                            <span class="mural-category">Activism</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3><!-- TITLE --></h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="identity">
+                        <div class="mural-image" style="background-image: url('images/murales/mural-6.jpg');">
+                            <span class="mural-category">Identity</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3><!-- TITLE --></h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="history">
+                        <div class="mural-image" style="background-image: url('images/murales/mural-7.jpg');">
+                            <span class="mural-category">History</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3><!-- TITLE --></h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                    <div class="mural-card" data-category="identity">
+                        <div class="mural-image" style="background-image: url('images/murales/mural-8.jpg');">
+                            <span class="mural-category">Identity</span>
+                        </div>
+                        <div class="mural-content">
+                            <h3><!-- TITLE --></h3>
+                            <p class="mural-artist"><!-- ARTIST --></p>
+                            <p class="mural-description"><!-- DESCRIPTION --></p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Pilsen Digital</h4>
+                    <p>A digital humanities project from the University of Chicago</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://voices.uchicago.edu/vaeranda/basic-page/" target="_blank" rel="noopener">Vaeranda Magazine</a></li>
+                        <li><a href="https://www.uchicago.edu" target="_blank" rel="noopener">University of Chicago</a></li>
+                    </ul>
+                </div>
+                <div class="footer-statement">
+                    <h4>Inclusivity Statement</h4>
+                    <p>This project celebrates and values the diversity of identities, languages, and experiences that enrich both the classroom and the Pilsen community.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 Alejandro Orihuela | University of Chicago</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,41 +1,41 @@
 # Pilsen Digital
-## Cartografía de Resistencia, Lengua e Identidad
+## Cartography of Resistance, Language & Identity
 
-Un proyecto de humanidades digitales de la Universidad de Chicago
+A digital humanities project from the University of Chicago
 
-**Autor:** Alejandro Orihuela  
-**Mentora:** Dra. María Cecilia Lozada
+**Author:** Alejandro Orihuela  
+**Mentor:** Dr. Maria Cecilia Lozada
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 pilsen-digital/
-├── index.html              # Página principal
-├── cartografia.html        # Mapa interactivo
-├── voces.html              # Podcasts y entrevistas
-├── galeria.html            # Galería de murales
-├── repositorio.html        # Trabajos académicos
+├── index.html              # Home page
+├── map.html                # Interactive Map
+├── voices.html             # Podcasts and interviews
+├── gallery.html            # Mural gallery
+├── repository.html         # Academic works
 ├── css/
-│   └── styles.css          # Estilos del sitio
+│   └── styles.css          # Site styles
 ├── js/
 │   └── main.js             # JavaScript
 ├── images/
-│   ├── logo-uchicago.png       # Logo Universidad de Chicago
-│   ├── logo-romance-languages.png  # Logo Dept. Romance Languages
-│   ├── logo-lacs.png           # Logo Latin American Studies
-│   ├── hero-bg.jpg             # Imagen de fondo del hero
-│   ├── preview-cartografia.jpg # Preview para sección Cartografía
-│   ├── preview-voces.jpg       # Preview para sección Voces
-│   ├── preview-galeria.jpg     # Preview para sección Galería
-│   ├── preview-repositorio.jpg # Preview para sección Repositorio
-│   ├── murales/                # Fotos de murales
-│   ├── historias/              # Fotos para historias familiares
-│   └── entrevistas/            # Fotos de líderes entrevistados
+│   ├── logo-uchicago.png       # University of Chicago Logo
+│   ├── logo-romance-languages.png  # Dept. Romance Languages Logo
+│   ├── logo-lacs.png           # Latin American Studies Logo
+│   ├── hero-bg.jpg             # Hero background image
+│   ├── preview-map.jpg         # Preview for Map section
+│   ├── preview-voices.jpg      # Preview for Voices section
+│   ├── preview-gallery.jpg     # Preview for Gallery section
+│   ├── preview-repository.jpg  # Preview for Repository section
+│   ├── murales/                # Mural photos
+│   ├── historias/              # Family history photos
+│   ├── entrevistas/            # Interview photos
+│   └── projects/               # Creative project images
 └── documents/
-    ├── guias/                  # PDFs de guías de inmersión
-    └── proyectos/              # PDFs de proyectos estudiantiles
+    └── proyectos/              # Student project PDFs
 ```
 
 ---
